@@ -1,8 +1,22 @@
 import java.util.Scanner;
 class main{
     public static int to,from,number;
+    public static int reps=0;
     public static void main(String[] args) {
         input();
+    }
+    public static void input(){
+        reps++;
+        if(reps>0){
+            System.out.println("retry biatch");
+        }
+        Scanner Q=new Scanner(System.in);
+        System.out.println("Enter the base of the number to be converted 2 , 8 , 10 , 16 ");
+        from=Q.nextInt();
+        System.out.println("Enter the the base to which you wish the number to be converted to ? ");
+        to=Q.nextInt();
+        System.out.println("Enter the number");
+        number=Q.nextInt();
         switch(to){
             case 2:{
                 binary B=new binary();
@@ -97,15 +111,5 @@ class main{
                 break;
             }
         }
-        
-    }
-    public static void input(){
-        Scanner Q=new Scanner(System.in);
-        System.out.println("Enter the base of the number to be converted 2 , 8 , 10 , 16 ");
-        from=Q.nextInt();
-        System.out.println("Enter the the base to which you wish the number to be converted to ? ");
-        to=Q.nextInt();
-        System.out.println("Enter the number");
-        number=Q.nextInt();
     }
 }
