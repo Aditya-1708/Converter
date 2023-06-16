@@ -4,11 +4,17 @@ public class binary {
         return octa;
     }
     public int BtoD(int num){
-        int decimal=0;
+        int decimal=0,i=0,place=0;
+        while(num!=0){
+            place=num%10;
+            decimal=decimal+(int)(place*(Math.pow(2,i)));
+            num=num/10;
+            i++;
+        }
         return decimal;
 
     }
-    public int BtoH(int num){
+    public int BtoH(String num){
         int hexa=0;
         return hexa;
     }

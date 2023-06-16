@@ -1,15 +1,14 @@
 public class hexa {
-    public int HtoB(int num){
+    public int HtoB(String num){
         int octa=0;
         return octa;
     }
-    public int HtoO(int num){
+    public int HtoO(String num){
         int octa=0;
         return octa;
     }
-    public int HtoD(int num){
-        int decimal=0;
+    public int HtoD(String num){
+        
         return decimal;
-
     }
 }
